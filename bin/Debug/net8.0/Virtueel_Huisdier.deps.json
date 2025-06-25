@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Virtueel_Huisdier/1.0.0": {
+        "runtime": {
+          "Virtueel_Huisdier.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Virtueel_Huisdier/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
