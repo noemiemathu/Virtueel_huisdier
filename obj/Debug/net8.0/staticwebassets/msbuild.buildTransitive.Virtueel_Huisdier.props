@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Virtueel_Huisdier.props" />
+</Project>
