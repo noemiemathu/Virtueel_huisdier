@@ -1,0 +1,54 @@
+﻿body {
+    background-color: #F3DFFF;
+}
+
+#balkje {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    align-content: center;
+    display: flex;
+}
+
+#naam {
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#progress img {
+    max-height: 50px;
+    max-width: 50px;
+    display: flex;
+}
+
+.groote img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.dier image {
+    max-width: 500px;
+    max-height: 500px;
+    left: 50%;
+}
+
+.size img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.img-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+}

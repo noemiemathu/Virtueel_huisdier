@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #F3DFFF;
+}
+.size img {
+    margin-right: 20px;
+    max-height: 250px;
+    max-width: 250px;
+    position: absolute;
+    left: 45%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.bag {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.p {
+    border: 4px solid white;
+    border-radius: 10px
+}
+.gif img {
+    margin-right: 20px;
+    max-height: 250px;
+    max-width: 250px;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+}

@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #F3DFFF
+}
+
+.text {
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.p {
+    border: 4px solid white;
+    border-radius: 10px
+}
+
+.size img {
+    margin-right: 20px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.ingesprongen-tekst {
+    padding-left: 250px;
+}
+
+.image {
+    padding-left: 400px
+}
+
+.img-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
