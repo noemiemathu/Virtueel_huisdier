@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@model Virtueel_Huisdier.Models.Game
+ 
+<link rel="stylesheet" type="text/css" href="~/css/choose.css" />
+ 
+<div class="text">
+    <h2>Kies je dier!!</h2>
+</div>
+ 
+<div class="size">
+<br /><br />
+    <div class="ingesprongen-tekst">
+        <div style="display: inline-block;">
+            @using (Html.BeginForm("SaveImg", "Huisdier", FormMethod.Post, new { entype = "multipart/from-data" }))
+            {
+                <input type="hidden" name="dier" value="/images/Konijntje.jpg" />
+                <button type="submit" class="img-button">
+                <img src="~/images/Konijntje.jpg" class="p" />
+                </button>
+            }
+        </div>
+        <div style="display: inline-block;">
+            @using (Html.BeginForm("SaveImg", "Huisdier", FormMethod.Post, new { entype = "multipart/from-data" }))
+            {
+                <input type="hidden" name="dier" value="/images/Hondje.jpg" />
+                <button type="submit" class="img-button">
+                <img src="~/images/Hondje.jpg" class="p"/>
+                </button>
+            }
+        </div>
+        <div style="display: inline-block;">
+            @using (Html.BeginForm("SaveImg", "Huisdier", FormMethod.Post, new { entype = "multipart/from-data" }))
+            {
+                <input type="hidden" name="dier" value="/images/Poesje.jpg" />
+                <button type="submit" class="img-button">
+                <img src="~/images/Poesje.jpg" class="p"/>
+                </button>
+            }
+</div><br /><br />
+</div>
+    <div class="image">
+        <div style="display: inline-block;">
+            @using (Html.BeginForm("SaveImg", "Huisdier", FormMethod.Post, new { entype = "multipart/from-data" }))
+            {
+                <input type="hidden" name="dier" value="/images/Vogel.jpg" />
+                <button type="submit" class="img-button">
+                <img src="~/images/Vogel.jpg" class="p"/>
+                </button>
+            }
+        </div>
+        <div style="display: inline-block;">
+            @using (Html.BeginForm("SaveImg", "Huisdier", FormMethod.Post, new { entype = "multipart/from-data" }))
+            {
+                <input type="hidden" name="dier" value="/images/Hamster.jpg" />
+                <button type="submit" class="img-button">
+                <img src="~/images/Hamster.jpg" class="p"/>
+                </button>
+            }
+        </div>
+    </div>
+</div>

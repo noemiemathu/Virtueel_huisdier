@@ -1,0 +1,94 @@
+﻿@model Virtueel_Huisdier.Models.Game
+
+<link rel="stylesheet" type="text/css" href="~/css/game.css" />
+<link rel="stylesheet" type="text/css" href="~/css/popup.css" />
+
+<div id="balkje">
+    <div class="groote">
+        <form method="post" action="@Url.Action("DeleteGame", "Huisdier")">
+            <button type="submit" class="img-button">
+                <img src="~/images/huis.jpg" />
+            </button>
+        </form>
+    </div>
+    <div id="progress">
+        <img src="~/images/bot.jpg" />
+        <p>@Model.status.eten</p>
+    </div>
+    <div id="progress">
+        <img src="~/images/pl.jpg" />
+        <p>@Model.status.gezondheid</p>
+    </div>
+    <div id="progress">
+        <img src="~/images/sm.jpg" />
+        <p>@Model.status.geluk</p>
+    </div>
+    <div id="progress">
+        <img src="~/images/zzz.jpg" />
+        <p>@Model.status.energie</p>
+    </div>
+    <div id="naam">
+        <h2>@Model.name</h2>
+    </div>
+    <br /><br /><br />
+</div>
+
+<div style="display: inline-block;" class="size">
+    <br />
+    <form method="post" action="@Url.Action("Feed", "Huisdier")">
+        <input type="hidden" name="gif" value="/images/hamstereat.gif" />
+        <button type="submit" class="img-button">
+            <img src="~/images/bot.jpg" />
+        </button>
+    </form>
+    <form method="post" action="@Url.Action("Medicine", "Huisdier")">
+        <input type="hidden" name="gif" value="/images/sickbunny.gif" />
+        <button type="submit" class="img-button">
+            <img src="~/images/pl.jpg" />
+        </button>
+    </form>
+    <form method="post" action="@Url.Action("Play", "Huisdier")">
+        <input type="hidden" name="gif" value="/images/birdplay.gif" />
+        <button type="submit" class="img-button">
+            <img src="~/images/sm.jpg" />
+        </button>
+    </form>
+    <form method="post" action="@Url.Action("Sleep", "Huisdier")">
+        <input type="hidden" name="gif" value="/images/sleepydog.gif" />
+        <button type="submit" class="img-button">
+            <img src="~/images/zzz.jpg" />
+        </button>
+    </form>
+</div>
+
+<img style="display: inline-block; max-block-size: 500px;" class="dier" src="@Model.dier" />
+
+@if (!string.IsNullOrWhiteSpace(Model.gif))
+{
+    <div id="popup" style="display:none;">
+        <img src="@Model.gif" />
+    </div>
+}
+
+<script>
+    function showPopupWithGif() {
+        var popup = document.getElementById('popup');
+        if (popup !== null) {
+            popup.style.display = 'block';
+            setTimeout(function () {
+                popup.style.display = 'none';
+            }, 4000);
+        }
+    }
+
+    function gameLoop() {
+        setTimeout(function () {
+            window.location.reload();
+        }, 4000);
+    }
+
+    window.onload = function () {
+        showPopupWithGif();
+        gameLoop();
+    };
+</script>

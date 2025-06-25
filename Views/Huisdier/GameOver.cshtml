@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" type="text/css" href="~/css/GameOver.css" />
+
+<div class="size">
+    <img class="p" src="~/images/GameOver.jpg" />
+</div>
+
+<div class="text">
+    <h3>Wil je opnieuw beginnen? </h3><br />
+</div>
+
+<div class="content">
+    <form method="post" action="@Url.Action("HandleForm", "Huisdier")">
+        <input type="submit" name="yesNo" value="Ja" />
+        <input type="submit" name="yesNo" value="Nee" />
+    </form>
+</div>
+<br />
+<div class="bag">
+    @if (ViewBag.Result != null)
+    {
+        <h1>@ViewBag.Result</h1>
+    }
+</div>
+
+<div class="gif">
+    <img src="~/images/deadcat.gif" />
+</div>

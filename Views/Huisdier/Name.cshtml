@@ -1,0 +1,30 @@
+﻿@model Virtueel_Huisdier.Models.Game
+
+<link rel="stylesheet" type="text/css" href="~/css/name.css" />
+
+<form method="post" action="@Url.Action("Index", "Huisdier")">
+    <input type="submit" value="Terug" />
+</form>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="box1">
+    <h2>Voer een naam in voor je dier!</h2>
+</div>
+<br />
+<br />
+
+<div class="form">
+    <form method="post" action="@Url.Action("SaveName", "Huisdier")">
+        <input type="text" name="name" id="name" placeholder="Naam" />
+        <input type="submit" value="Oké" />
+        <input type="hidden" name="dier" value="@Model.dier" />
+    </form>
+    <br />
+    <div id="size">
+        <img src="@Model.dier" />
+    </div>
+</div>
